@@ -8,5 +8,6 @@ builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
 var navigationManager = builder.Services.BuildServiceProvider().GetRequiredService<NavigationManager>();
+var baseUri = navigationManager.BaseUri;
 
 await builder.Build().RunAsync();

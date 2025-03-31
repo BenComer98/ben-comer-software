@@ -1,8 +1,8 @@
 {
   "routes": [
     {
-      "route": "/blazor_exercises/{*path}",
-      "rewrite": "/index.html",
+      "route": "/{*path}",
+      "serve": "/index.html",
       "statusCode": 200
     }
   ]
