@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BenComerSoftware")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71dc2fa0cf619c383339dc01292503d84a589d10")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3dadaaa133041ff82e6055e10b27525118134c6a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BenComerSoftware")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BenComerSoftware")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
