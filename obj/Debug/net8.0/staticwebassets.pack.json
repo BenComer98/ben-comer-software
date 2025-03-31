@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\benja\\Documents\\Apps\\BenComerSoftware\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\benja\\Documents\\Apps\\BenComerSoftware\\obj\\Debug\\net8.0\\compressed\\3apo9v5oq8.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\benja\\Documents\\Apps\\BenComerSoftware\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BenComerSoftware.styles.css",
+      "PackagePath": "staticwebassets\\BenComerSoftware.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\benja\\Documents\\Apps\\BenComerSoftware\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\benja\\Documents\\Apps\\BenComerSoftware\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\benja\\Documents\\Apps\\BenComerSoftware\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\benja\\Documents\\Apps\\BenComerSoftware\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\benja\\Documents\\Apps\\BenComerSoftware\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\benja\\Documents\\Apps\\BenComerSoftware\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\benja\\Documents\\Apps\\BenComerSoftware\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BenComerSoftware.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BenComerSoftware.props",
+      "PackagePath": "build\\BenComerSoftware.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BenComerSoftware.props",
+      "PackagePath": "buildMultiTargeting\\BenComerSoftware.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BenComerSoftware.props",
+      "PackagePath": "buildTransitive\\BenComerSoftware.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

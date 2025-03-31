@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\users\\benja\\Documents\\Apps\\BenComerSoftware\\BenComerSoftware.csproj": {}
+    "C:\\Users\\benja\\Documents\\Apps\\BenComerSoftware\\BenComerSoftware.csproj": {}
   },
   "projects": {
-    "C:\\users\\benja\\Documents\\Apps\\BenComerSoftware\\BenComerSoftware.csproj": {
+    "C:\\Users\\benja\\Documents\\Apps\\BenComerSoftware\\BenComerSoftware.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\users\\benja\\Documents\\Apps\\BenComerSoftware\\BenComerSoftware.csproj",
+        "projectUniqueName": "C:\\Users\\benja\\Documents\\Apps\\BenComerSoftware\\BenComerSoftware.csproj",
         "projectName": "BenComerSoftware",
-        "projectPath": "C:\\users\\benja\\Documents\\Apps\\BenComerSoftware\\BenComerSoftware.csproj",
+        "projectPath": "C:\\Users\\benja\\Documents\\Apps\\BenComerSoftware\\BenComerSoftware.csproj",
         "packagesPath": "C:\\Users\\benja\\.nuget\\packages\\",
-        "outputPath": "C:\\users\\benja\\Documents\\Apps\\BenComerSoftware\\obj\\",
+        "outputPath": "C:\\Users\\benja\\Documents\\Apps\\BenComerSoftware\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,53 @@
+@page "/blazor_exercises"
+@using System.Drawing
+@inject IJSRuntime JS
+
+<PageTitle>Blazor Exercises</PageTitle>
+
+<h1>Blazor Exercises</h1>
+
+<div style="margin-bottom: 4px;">In addition to the Azure hosting I set up for this website (to which I was also a neophyte), this app was my first attempt at
+Blazor. This page is an exercise sheet; You should be able to see a running process of me learning it!</div>
+
+<button class="@ButtonClass" style="background-color:@buttonColor" @onclick=ClickFirstButton>@(isColor ? "Change Color" : "Change Rounded")</button>
+
+<button class="btn btn-secondary" @onclick=SwitchTitle>Switch Title</button>
+
+@code {
+  private bool isColor = true;
+  private bool isRounded = false;
+  private string buttonColor = "#00f";
+  private string ButtonClass => isRounded ? "btn btn-rounded" : "btn btn-square";
+  private void ClickFirstButton() {
+    if (isColor) {
+      if (buttonColor == "#00f") {
+        buttonColor = "#0f0";
+      }
+      else if (buttonColor == "#0f0") {
+        buttonColor = "#f00";
+      }
+      else if (buttonColor == "#f00") {
+        buttonColor = "#00f";
+      }
+      else {
+        #pragma warning disable CS4014
+        ConsoleError("Bad colors!");
+        #pragma warning restore CS4014
+      }
+    }
+    else {
+      isRounded = !isRounded;
+    }
+  }
+  private void SwitchTitle() {
+    isColor = !isColor;
+  }
+
+  private async Task ConsoleLog(string message) {
+    await JS.InvokeVoidAsync("console.log", message);
+  }
+
+  private async Task ConsoleError(string errorMessage) {
+    await JS.InvokeVoidAsync("console.error", errorMessage);
+  }
+}
