@@ -1030,3 +1030,4 @@ C:\Users\benja\Documents\Apps\BenComerSoftware\obj\Debug\net8.0\BenComerSoftware
 C:\Users\benja\Documents\Apps\BenComerSoftware\obj\Debug\net8.0\refint\BenComerSoftware.dll
 C:\Users\benja\Documents\Apps\BenComerSoftware\obj\Debug\net8.0\BenComerSoftware.pdb
 C:\Users\benja\Documents\Apps\BenComerSoftware\obj\Debug\net8.0\ref\BenComerSoftware.dll
+C:\Users\benja\Documents\Apps\BenComerSoftware\bin\Debug\net8.0\staticwebapp.config.json

@@ -1,23 +1,90 @@
 @page "/blazor_exercises"
 @using System.Drawing
+@inject NavigationManager NavigationManager
 @inject IJSRuntime JS
 
 <PageTitle>Blazor Exercises</PageTitle>
 
-<h1>Blazor Exercises</h1>
-
-<div style="margin-bottom: 4px;">In addition to the Azure hosting I set up for this website (to which I was also a neophyte), this app was my first attempt at
-Blazor. This page is an exercise sheet; You should be able to see a running process of me learning it!</div>
-
-<button class="@ButtonClass" style="background-color:@buttonColor" @onclick=ClickFirstButton>@(isColor ? "Change Color" : "Change Rounded")</button>
-
-<button class="btn btn-secondary" @onclick=SwitchTitle>Switch Title</button>
+<div>
+  <h1>Blazor Exercises</h1>
+</div>
+<div style="margin-bottom: 4px;">
+  In addition to the Azure hosting I set up for this website (to which I was also a neophyte), this app was my first attempt at
+Blazor. This page is an exercise sheet; You should be able to see a running process of me learning it!
+</div>
+<div>
+  <h3>
+    Color/Rounded Button
+  </h3>
+</div>
+<div>
+  <button class="@ButtonClass" style="background-color:@buttonColor" @onclick=ClickFirstButton>@(isColor ? "Change Color" : "Change Rounded")</button>
+  <button class="btn btn-secondary" @onclick=SwitchTitle>Switch Title</button>
+</div>
+<div>
+  <h3 style="margin-top: 6px">
+    Navigation Button
+  </h3>
+</div>
+<div>
+  <button class="btn btn-primary" @onclick=NavigateToProjects>
+    Navigate to Projects
+  </button>
+</div>
+<div>
+  <h3 style="margin-top: 6px">
+    Table
+  </h3>
+</div>
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Players</th>
+        <th>Avg. Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach (var board_game in board_games) {
+        <tr>
+          <td>@board_game.Name</td>
+          <td>@board_game.Type</td>
+          <td>@board_game.Players</td>
+          <td>@board_game.Time</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>
 
 @code {
   private bool isColor = true;
   private bool isRounded = false;
   private string buttonColor = "#00f";
   private string ButtonClass => isRounded ? "btn btn-rounded" : "btn btn-square";
+  private class BoardGame {
+    public string Name {get; set;}
+    public string Type {get; set;}
+    public string Players {get; set;}
+    public string Time {get; set;}
+
+    public BoardGame(string name, string type, string players, string time) {
+      this.Name = name;
+      this.Type = type;
+      this.Players = players;
+      this.Time = time;
+    }
+  }
+  private BoardGame[] board_games = [
+    new BoardGame("Ticket to Ride", "Strategy", "3-5", "30-60 mins"),
+    new BoardGame("Risk", "War/Strategy", "2-4", "2-3 hrs"),
+    new BoardGame("Love Letter", "Card", "2-5", "30 mins"),
+    new BoardGame("Sorry!", "Family", "2-4", "45 mins"),
+    new BoardGame("Cards Against Humanity", "Card/Comedy/Adult", "2-10", "any")
+  ];
+
   private void ClickFirstButton() {
     if (isColor) {
       if (buttonColor == "#00f") {
@@ -41,6 +108,14 @@ Blazor. This page is an exercise sheet; You should be able to see a running proc
   }
   private void SwitchTitle() {
     isColor = !isColor;
+  }
+
+  private void NavigateToProjects() {
+    NavigateTo("projects");
+  }
+
+  private void NavigateTo(string page) {
+    NavigationManager.NavigateTo(page);
   }
 
   private async Task ConsoleLog(string message) {
